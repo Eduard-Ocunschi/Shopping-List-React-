@@ -81,6 +81,7 @@ input {
   flex-direction: column;
   gap: 3.2rem;
   align-items: center;
+  flex-grow: 1;
 }
 
 .actions button,
@@ -114,7 +115,7 @@ input {
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;
-  accent-color: #fff;
+  accent-color: #ad2831;
 }
 
 .list li button {
@@ -131,4 +132,28 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  button,
+  select,
+  input {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .add-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
 }
